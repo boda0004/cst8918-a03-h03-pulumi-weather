@@ -32,6 +32,8 @@ export async function loader() {
     lon: location.lon,
     units: units,
   })
+  console.log("API response:", data)
+  
   return json({ currentConditions: data })
 }
 
